@@ -26,15 +26,13 @@ class Cat extends Animal {
  * métodos abstractos creados previamente.
  * A maiores, este métodos declarados serán 
  * PÚBLICOS
+ * Aquí o ter `this.name` estamos accedendo a variable da clase inicial
  */
     makeSound(): void {
         console.log(`${this.name} meows.`);
     }
-
-    makeSomething(): void{
-
-    }
+    makeSomething(): void{}
     
 }
    const cat = new Cat("pepito");
-   cat.makeSound(); // Output: Whiskers meows.
+   cat.makeSound(); // Output: Whiskers meows. 
