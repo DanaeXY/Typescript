@@ -28,7 +28,9 @@ class Persona{
  * A clase 'Persona2' contén variables/atributos
  * que son privados ==> 'private',
  * iso fai que mediante unha 'INSTANCIA'
- * NON PODAMOS a elas 
+ * NON PODAMOS a elas
+ * 
+ * Dita clase contén un método privado, e non é accesible
  */
 class Persona2{
     private nome: string;
@@ -45,6 +47,10 @@ class Persona2{
 
     public imprimir(){
         console.log(`A persoa chámase ${this.nome}, apelídase ${this.apelidos}\no seu dni é: ${this.dni} \no ano de nacemento ${this.anoNacemento}`)
+    }
+
+    private datosPersona(){
+        console.log("Estes son datos privados ...", this.anoNacemento)
     }
 
 }
