@@ -8,3 +8,5 @@ let result : number | string;
 result = probandoIf(valor1,valor2)
 result = result > 1 ? result : "Valor é menor"; 
 console.log(result)
+
+
